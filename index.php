@@ -8,11 +8,7 @@
   <form  action="http://localhost:8000/thanks.php"  method="post">
     <div>
       <label  for="nom">Nom :</label>
-      <input  type="text"  id="nom"  name="user_name">
-    </div>
-    <div>
-      <label  for="téléphone">Téléphone :</label>
-      <input  type="Téléphone"  id="téléphone"  name="user_telephone">
+      <input  type="text"  id="nom"  name="user_name" required >
     </div>
     <div>
         <label  for="Sujet">Sujet :</label>
@@ -28,11 +24,11 @@
        </div>
     <div>
       <label  for="courriel">Courriel :</label>
-        <input  type="email"  id="courriel"  name="user_email">
+        <input  type="email"  id="courriel"  name="user_email" required>
     </div>
     <div>
       <label  for="message">Message :</label>
-      <textarea  id="message"  name="user_message"></textarea>
+      <textarea  id="message"  name="user_message" required></textarea>
     </div>
     <div  class="button">
       <button  type="submit">Envoyer votre message</button>
